@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © 2015 MageWorx. All rights reserved.
+ * See LICENSE.txt for license details.
+ */
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <tab id="powerbuy" sortOrder="2001">
+            <label>Powerbuy</label>
+        </tab>
+        <section id="powerbuyauth" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>General</label>
+            <tab>powerbuy</tab>
+            <resource>Powerbuy_Authentication::config_powerbuyauth</resource>
+            <group id="general" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label">
+                <label>General</label>
+                <field id="enable" showInDefault="1" showInStore="1" showInWebsite="1" sortOrder="10" translate="label" type="select">
+                    <label>Enable Powerbuy Authentication</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="hash_delimiter" translate="label comment" type="text" sortOrder="10"  showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Hash String Delimiter</label>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

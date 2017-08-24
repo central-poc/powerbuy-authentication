@@ -1,0 +1,21 @@
+{
+    "name": "powerbuy/authentication",
+    "description": "Support Powerbuy Lagacy Authentication Hashing",
+    "type": "magento2-module",
+    "version": "1.0.0",
+    "extra": {
+        "map": [
+            [
+                "*",
+                "Powerbuy/Authentication"
+            ]
+        ]
+    },
+    "authors": [
+        {
+            "name": "Chatchai Naenudorn",
+            "email": "nachatchai@central.co.th"
+        }
+    ],
+    "require": {}
+}
